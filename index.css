@@ -126,9 +126,8 @@ main {
 #submit-button {
   font-family: var(--ff-primary);
   font-size: .875rem;
-  font-weight: 700;
   color: white;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 
   width: 100%;
   padding: 14px;
@@ -216,7 +215,7 @@ main {
   }
 
   #submit-button {
-    font-size: 1rem;
+    font-size: .9375rem;
 
     padding: 12px;
   }
