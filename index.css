@@ -16,22 +16,24 @@ body {
 
   background: hsl(216, 12%, 8%);
 
+}
+
+main {
+  height: 100vh;
+  padding: 25px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 100vh;
-  padding: 25px;
 }
 
 .card {
-  background: linear-gradient(#232a34, #181e26);
-  border-radius: 20px;
-
   width: 100%;
   min-width: 325px;
   max-width: 410px;
   padding: 25px 25px 30px 25px;
+  background: linear-gradient(#232a34, #181e26);
+  border-radius: 20px;
 }
 
 .card--display-flex {
@@ -64,15 +66,14 @@ body {
 }
 
 #icon-container {
+  width: 40px;
+  height: 40px;
   background: var(--clr-circle);
   border-radius: 50%;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 40px;
-  height: 40px;
   margin-bottom: 1rem;
 }
 
@@ -88,7 +89,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 24px;
 }
 
@@ -98,17 +98,17 @@ body {
   font-weight: 700;
   color: var(--clr-rating);
 
+  width: 40px;
+  height: 40px;
   background: var(--clr-circle);
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  transition: color .5s, background .5s;
+  transition: color .25s, background .25s;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
 }
 
 .rating__number > p {
@@ -130,14 +130,14 @@ body {
   color: white;
   letter-spacing: .2rem;
 
+  width: 100%;
+  padding: 14px;
   background: var(--clr-orange);
   border: none;
   border-radius: 1000px;
   cursor: pointer;
   transition: color .25s, background .25s;
 
-  width: 100%;
-  padding: 14px;
 }
 
 #submit-button:hover,
@@ -153,6 +153,7 @@ body {
 
 #thank-you-card__illustration {
   height: 100px;
+
   margin-bottom: 1.5rem;
 }
 
@@ -187,6 +188,7 @@ body {
   #icon-container {
     width: 50px;
     height: 50px;
+
     margin-bottom: 1.5rem;
   }
 
@@ -225,6 +227,7 @@ body {
 
   #thank-you-card__illustration {
     height: 110px;
+
     margin-bottom: 2rem;
   }
 
