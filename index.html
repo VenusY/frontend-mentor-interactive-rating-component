@@ -16,41 +16,45 @@
   <title>Interactive rating component</title>
 </head>
 <body>
-  <div class="card" id="default-card">
-    <div id="icon-container">
-      <img src="images/icon-star.svg" alt="Star icon" id="star-icon">
+  <main>
+    <div class="card" id="default-card">
+      <div id="icon-container">
+        <img src="images/icon-star.svg" alt="Star icon" id="star-icon">
+      </div>
+
+      <h2 class="heading">How did we do?</h2>
+      
+      <p class="paragraph">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+      <div id="rating">
+        <button class="rating__number" id="rating__1"><p>1</p></button>
+        <button class="rating__number" id="rating__2"><p>2</p></button>
+        <button class="rating__number" id="rating__3"><p>3</p></button>
+        <button class="rating__number" id="rating__4"><p>4</p></button>
+        <button class="rating__number" id="rating__5"><p>5</p></button>
+      </div>
+
+      <button type="button" id="submit-button">SUBMIT</button>
     </div>
 
-    <h2 class="heading">How did we do?</h2>
+    <div class="card card--display-flex card--display-none" id="thank-you-card">
+      <img src="images/illustration-thank-you.svg" alt="Illustration of phone with receipt" id="thank-you-card__illustration">
+      
+      <div id="thank-you-card__user-rating">
+        <p>You selected 4 out of 5</p>
+      </div>
 
-    <p class="paragraph">
-      Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!
-    </p>
-
-    <div id="rating">
-      <button class="rating__number" id="rating__1"><p>1</p></button>
-      <button class="rating__number" id="rating__2"><p>2</p></button>
-      <button class="rating__number" id="rating__3"><p>3</p></button>
-      <button class="rating__number" id="rating__4"><p>4</p></button>
-      <button class="rating__number" id="rating__5"><p>5</p></button>
+      <h2 class="heading text--center">Thank you!</h2>
+      
+      <p class="paragraph text--center" id="thank-you-card__paragraph">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
     </div>
-
-    <button type="button" id="submit-button">SUBMIT</button>
-  </div>
-
-  <div class="card card--display-flex card--display-none" id="thank-you-card">
-    <img src="images/illustration-thank-you.svg" alt="Illustration of phone with receipt" id="thank-you-card__illustration">
-
-    <div id="thank-you-card__user-rating"><p>You selected 4 out of 5</p></div>
-
-    <h2 class="heading text--center">Thank you!</h2>
-
-    <p class="paragraph text--center" id="thank-you-card__paragraph">
-      We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!
-    </p>
-  </div>
+  </main>
 
   <script src="index.js"></script>
 </body>
